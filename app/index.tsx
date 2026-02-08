@@ -2,9 +2,9 @@ import React from "react";
 import { Alert, StyleSheet, Text, View, ScrollView, Pressable } from "react-native";
 
 const chats = [
-  { id: "1", name: "WhatsApp", msg: "New: Set the mood with status reaction stickers…", time: "Saturday", unread: 8 },
-  { id: "2", name: "Alex", msg: "Are we still on for tomorrow?", time: "5:40 PM", unread: 0 },
-  { id: "3", name: "Sam", msg: "okkk", time: "2:09 PM", unread: 0 },
+  { id: "1", name: "WhatsApp", msg: "New: Set the mood with status reaction stickers...", time: "Saturday", unread: 8 },
+  { id: "2", name: "Mayur", msg: "Are we still on for tomorrow?", time: "5:40 PM", unread: 0 },
+  { id: "3", name: "Paras", msg: "okk", time: "2:09 PM", unread: 0 },
   { id: "4", name: "Group Chat", msg: "Sent a photo", time: "8:00 AM", unread: 3 },
   { id: "5", name: "Taylor", msg: "lol", time: "2026-01-22", unread: 1 },
 ];
