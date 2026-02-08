@@ -1,23 +1,35 @@
-# Mobile UI Clone (Expo and React Native)
+# WhatsApp UI Clone
 
-Assignment: Building a Mobile UI with Expo and React Native  
-CPRG-303
+A mobile UI clone of WhatsApp's Chats tab built with Expo and React Native for CPRG-303.
 
-Prepared by:  
-Mayur Rajendrakumar Brahmbhatt  
-Paras Odedara  
-Taylor O'Brien
+## Team Members
+- Mayur Rajendrakumar Brahmbhatt
+- Paras Odedara
+- Taylor O'Brien
 
-Clone Target Screen: WhatsApp "Chats" Tab (in dark mode).  
-Reference screenshot will be added in references folder (black bars on chats for privacy).
+## Features 
+- Chat list with message previews
+- Unread message badges
+- Search bar
+- navigation icons
+- Alert button functionality
+- Bottom navigation tabs
 
-## Todo:
+## How to Run
+1. Install:
+```
+   npm install
+```
 
-- Create Expo Project
+2. Start the app server:
+```
+   npx expo start
+```
 
-- Build clone WhatsApp "Chats" Tab in dark mode
-  - (i) featuring header, search bar, rows, chat list, bottom navigation
-  - (ii) Add Alert button ("Alert Button pressed")
+3. Scan the QR code with Expo Go app (iOS/Android)
 
-- Make sure it runs on iOS and Android
+## Screenshots
+Reference screenshot available in `/references` folder.
 
+## Assignment
+Building a Mobile UI with Expo and React Native - CPRG-303
