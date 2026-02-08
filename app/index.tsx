@@ -12,9 +12,22 @@ const chats = [
 export default function Index() {
   return (
     <View style={styles.screen}>
+      {/* top icon row */}
+      <View style={styles.topRow}>
+        <Text style={styles.icon}>⋯</Text>
+        <View style={styles.topRight}>
+          <Text style={styles.icon}>📷</Text>
+          <Text style={styles.plus}>＋</Text>
+        </View>
+      </View>
+
       <Text style={styles.title}>Chats</Text>
+
+      {/* fake search bar */}
+      <View style={styles.searchBar}>
+        <Text style={styles.searchText}>🔍 Ask Meta AI or Search</Text>
+      </View>
       
-      {/* TODO: Add search bar */}
       {/* TODO: Add archived row */}
       
       {/* Basic chat list */}
@@ -31,6 +44,7 @@ export default function Index() {
         ))}
       </ScrollView>
       
+      {/* TODO: Add unread badges */}
       {/* TODO: Add alert button */}
       {/* TODO: Add bottom navigation */}
     </View>
@@ -43,16 +57,46 @@ const styles = StyleSheet.create({
     backgroundColor: "#0b0b0b",
     paddingTop: 50,
   },
+  topRow: {
+    paddingHorizontal: 16,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  topRight: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+  },
+  icon: { color: "white", fontSize: 22 },
+  plus: {
+    color: "black",
+    backgroundColor: "#35c96b",
+    width: 34,
+    height: 34,
+    borderRadius: 17,
+    textAlign: "center",
+    textAlignVertical: "center",
+    fontSize: 20,
+    overflow: "hidden",
+  },
   title: {
     color: "white",
     fontSize: 44,
     fontWeight: "700",
     paddingHorizontal: 16,
+    marginTop: 10,
     marginBottom: 10,
   },
-  list: { 
-    flex: 1 
+  searchBar: {
+    marginHorizontal: 16,
+    borderRadius: 14,
+    backgroundColor: "#2a2a2a",
+    paddingVertical: 12,
+    paddingHorizontal: 14,
   },
+  searchText: { color: "#bdbdbd", fontSize: 16 },
+  list: { flex: 1 },
   chatRow: {
     flexDirection: "row",
     paddingHorizontal: 16,
@@ -68,21 +112,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#295a57",
     marginRight: 12,
   },
-  chatMiddle: { 
-    flex: 1 
-  },
-  chatName: { 
-    color: "white", 
-    fontSize: 18, 
-    fontWeight: "600",
-    marginBottom: 3,
-  },
-  chatMsg: { 
-    color: "#9a9a9a", 
-    fontSize: 14 
-  },
-  chatTime: { 
-    color: "#8a8a8a", 
-    fontSize: 14 
-  },
+  chatMiddle: { flex: 1 },
+  chatName: { color: "white", fontSize: 18, fontWeight: "600", marginBottom: 3 },
+  chatMsg: { color: "#9a9a9a", fontSize: 14 },
+  chatTime: { color: "#8a8a8a", fontSize: 14 },
 });
